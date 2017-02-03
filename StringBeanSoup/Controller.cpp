@@ -12,6 +12,7 @@
 
 using namespace std;
 
+
 void Controller :: start()
 {
     string string = "Hello, world!";
@@ -28,5 +29,16 @@ void Controller :: stringPlay(string string)
     cout << "What a wonderful " << string.substr(7) << endl;
     cout << "Hello, world! is " <<string.compare("Hello to the world!") << " characters shorter than Hello to the world!" << endl;
     cout << "With those out of the way, now we can really have some fun. :)" << endl;
+    
+    if (string == "Hello, world!")
+    {
+        cout << "Well, I guess you should start. What is your name, friend?" << endl;
+        cin >> string;
+        cout << "Interesting. " << string << " is a lovely name, friend." << endl;
+    }
+    
+    cout << "So, " << string << ", how are you? Well, I hope?" << endl;
+    cin >> string;
+    cout << "You're feeling " << string << "? That's... I can't tell. I'm pretyped text. Sorry to tell you, but I have no thought nor emotion. All I am is bits of electricity. By(t)e." << endl;
 }
 
