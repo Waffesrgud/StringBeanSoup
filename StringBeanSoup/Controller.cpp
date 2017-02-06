@@ -21,6 +21,19 @@ void Controller :: start()
 
 void Controller :: stringPlay(string string)
 {
+    
+    int nice [] = {1, 2, 3, 4, 5};
+    int niceLength = 5;
+    int meme [] = {6, 7, 8, 9, 10};
+    int memeLength = 5;
+    int i = 0;
+    for (i = 0; i < memeLength; i++)
+    {
+        
+    }
+    
+    
+    
     cout << string << endl;
     cout << string.size() << " characters long." << endl;
     cout << string[5] << " is the sixth character."<< endl;
