@@ -26,4 +26,41 @@ public:
     void setNodePointer(Node<Type> * nextPointer);
 };
 
+template <class Type>
+Node<Type> :: Node<Type>()
+{
+    nodePointer = nullptr;
+}
+
+template <class Type>
+Node<Type> :: Node<Type>(Type data)
+{
+    this->nodeData = data;
+    this->nodePointer = nullptr;
+}
+
+template <class Type>
+Node<Type> :: Node<Type>(Type value, Node<Type> * nextNode)
+{
+    this->nodeData = value;
+    this->nodePointer = nextNode;
+}
+
+Type Node<Type> :: getNodeData()
+{
+    return nodeData;
+}
+
+template <class Type>
+Node<Type> * Node<Type> :: getNodePointer()
+{
+    return nodePointer;
+}
+
+
+
+
 #endif /* Node_hpp */
+
+
+

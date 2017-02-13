@@ -9,14 +9,20 @@
 #ifndef StructureController_hpp
 #define StructureController_hpp
 
-#include <stdio.h>
+#include "../Node.hpp"
+#include <string>
+using namespace std;
+
 class StructureController
 {
 public:
     void start();
     void testIntArray();
+    void testNode();
     StructureController();
 private:
+    Node<string> wordNode;
+    Node<int> numberNode;
 };
 
 
