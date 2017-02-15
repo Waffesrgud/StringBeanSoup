@@ -9,6 +9,7 @@
 #ifndef StructureController_hpp
 #define StructureController_hpp
 
+#include "../Array.hpp"
 #include "../Node.hpp"
 #include <string>
 using namespace std;
@@ -20,9 +21,11 @@ public:
     void testIntArray();
     void testNode();
     StructureController();
+    void testArray();
 private:
     Node<string> wordNode;
     Node<int> numberNode;
+    Array<int> numberArray;
 };
 
 

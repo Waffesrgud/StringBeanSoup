@@ -41,6 +41,11 @@ void StructureController :: testIntArray()
     }
 }
 
+void StructureController :: testArray()
+{
+    
+}
+
 void StructureController :: start()
 {
     cout << "OH GOD NOT THE INTNODEARRAY" << endl;
