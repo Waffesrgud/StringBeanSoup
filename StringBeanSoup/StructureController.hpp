@@ -22,6 +22,7 @@ public:
     void testNode();
     StructureController();
     void testArray();
+    void testPain();
 private:
     Node<string> wordNode;
     Node<int> numberNode;

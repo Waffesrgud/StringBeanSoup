@@ -33,6 +33,12 @@ Node<Type> :: Node<Type>()
 }
 
 template <class Type>
+void Node<Type> :: setNodePointer(Node<Type> * pointer)
+{
+    this->nodePointer
+}
+
+template <class Type>
 Node<Type> :: Node<Type>(Type data)
 {
     this->nodeData = data;

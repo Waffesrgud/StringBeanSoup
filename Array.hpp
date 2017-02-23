@@ -43,7 +43,7 @@ Array<Type> :: ~Array()
     Node<Type> * remove = front;
     while(front != nullptr)
     {
-
+        //STOP THIS RIGHT NOW C++
         front = front->getNullPointer();
         cout << "Moving to the next node. At: "  << count << endl;
         delete remove;
@@ -63,7 +63,7 @@ Array<Type> :: Array(int size)
     this->size = size;
     for(int index = 1; index < size; index++)
     {
-        Node<Type> * currentNode = new IntNode();
+        Node<Type> * currentNode = new Node<Type>();
         currentNode->setNodePointer(front);
         front = currentNode;
     }
