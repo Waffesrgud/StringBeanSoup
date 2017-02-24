@@ -52,7 +52,7 @@ void List<Type> :: AttAtIndex(int index, Type value)
     if(index == 0)
     {
         addFront(value);
-    }
+    }`
     if(index == size)
     {
         addEnd(value);
@@ -68,5 +68,47 @@ void List<Type> :: AttAtIndex(int index, Type value)
         }
         
         size++;
+    }
+    
+template <class Type>
+    Type List<Type> :: remove(int index)
+    {
+        assert(index >= 0 && index < size);
+        Type removed;
+        
+        Node<Type> * current = front;
+        Node<Type> * previous = nullptr;
+        Node<Type> * toBeRemoved = nullptr;
+        if (index == 0)
+        {
+            toBeRemoved = front;
+            front = front->getNodePointer();
+        }
+        else if(index == size - 1)
+        {
+            for(int spot = 0; spot < index; spot++)
+            {
+                previous = current;
+                current = current->getNodePointer();
+            }
+            toBeRemoved = current;
+            previous -> setNodePointer(nullptr);
+        }
+        else {
+        for(int spot = 0; spot < index; spot++)
+        {
+            previous = current;
+            current = current->getNodePointer();
+        }
+        toBeRemoved = current;
+        current = toBeRemoved -> getNodePointer();
+        previous -> setNodePointer(current);
+        }
+        removed = toBeRemoved -> getNodeData()
+
+        delete toBeRemoved;
+        
+        size--;
+        return removed;
     }
 #endif /* List_hpp */
