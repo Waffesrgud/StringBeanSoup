@@ -26,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = ../DoublyLinkedList.hpp; sourceTree = "<group>"; };
+		73431C901E6730040092BFBA /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		734FD7181E5C8E540079F92F /* C++.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "C++.pdf"; path = "../../C++.pdf"; sourceTree = "<group>"; };
 		734FD7191E5CA5530079F92F /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		736A2E021E648D0300AB1FB4 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BiDirectionalNode.hpp; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		73F248E91E438AEC00E61BB9 /* StringBeanSoup */ = {
 			isa = PBXGroup;
 			children = (
+				73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */,
 				73BDB79E1E54B86200558494 /* Array.hpp */,
 				73C805BA1E52094600D4C75C /* Node.hpp */,
 				73B9B95A1E48D5F200F1351C /* IntNode.cpp */,
@@ -83,6 +86,7 @@
 				73EE51021E4B7E0B00B8F829 /* StructureController.hpp */,
 				734FD7191E5CA5530079F92F /* List.hpp */,
 				736A2E021E648D0300AB1FB4 /* BiDirectionalNode.hpp */,
+				73431C901E6730040092BFBA /* Stack.hpp */,
 			);
 			path = StringBeanSoup;
 			sourceTree = "<group>";
