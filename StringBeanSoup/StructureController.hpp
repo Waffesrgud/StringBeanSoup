@@ -19,7 +19,6 @@ class StructureController
 public:
     void start();
     void testIntArray();
-    void testNode();
     StructureController();
     void testArray();
     void testPain();

@@ -44,7 +44,7 @@ Array<Type> :: ~Array()
     while(front != nullptr)
     {
         //STOP THIS RIGHT NOW C++
-        front = front->getNullPointer();
+        front = front->getNodePointer();
         cout << "Moving to the next node. At: "  << count << endl;
         delete remove;
         cout << "Front is deleting..." << endl;
@@ -102,14 +102,14 @@ template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
-    int value = 0;
+    Type value = 0;
     Node<Type> * curr = front;
     for(int position = 0; position < index; position++)
     {
         curr = curr->getNodePointer();
     }
     
-    value = current->getNodeData();
+    value = curr -> getNodeData();
     return value;
 }
 
@@ -131,15 +131,12 @@ void Array<Type> :: setAtIndex(int index, Type value)
     assert(index >= 0 && index < size);
     
     Node<Type> * current = front;
-    for(int position = 0; position < index; position+)
+    for(int position = 0; position < index; position = position)
     {
         current = current->getNodePointer();
+        position++;
     }
     current->setNodeData(value);
 }
 
-int IntNodeArray :: getSize()
-{
-    return size
-}
 #endif /* Array_hpp */

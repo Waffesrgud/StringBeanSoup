@@ -18,10 +18,6 @@ StructureController :: StructureController()
     numberNode = Node<int>();
 }
 
-void StructureController :: testNode()
-{
-    wordNode.setNodeData("great days");
-}
 
 void StructureController :: testPain()
 {
@@ -66,6 +62,5 @@ void StructureController :: start()
 {
     cout << "OH GOD NOT THE INTNODEARRAY" << endl;
     testIntArray();
-    testNode();
     cout << "we lived! thanks!" << endl;
 }
