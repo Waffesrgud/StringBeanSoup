@@ -12,6 +12,7 @@
 #include "../Array.hpp"
 #include "../Node.hpp"
 #include <string>
+
 using namespace std;
 
 class StructureController

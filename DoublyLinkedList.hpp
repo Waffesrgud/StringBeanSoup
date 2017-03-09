@@ -11,7 +11,7 @@
 
 #include <assert.h>
 #include <iostream>
-#include "BiDirectionalNode.hpp"
+#include "../BiDirectionalNode_hpp"
 
 // I don't know what I'm even doing, help me please AHHHHHHHHHH [b] pain [/b]
 
@@ -24,7 +24,7 @@ private:
     int size;
 public:
     virtual void add(Type value) = 0;
-    virtual Type remove(int index) = 0;
+    virtual Type remove(int index) = 0;
     DoublyLinkedList()
     {
         size = 0;
@@ -45,5 +45,9 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
     this->front = nullptr;
     this->end = nullptr;
 }
+
+
+
+
 
 #endif /* DoublyLinkedList_hpp */

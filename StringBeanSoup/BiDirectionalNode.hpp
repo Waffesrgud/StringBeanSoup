@@ -71,6 +71,7 @@ BiDirectionalNode<Type> * BiDirectionalNode :: getPreviousPointer()
 template <class Type>
 void BiDirectionalNode :: setNodeData(Type data)
 {
+    this->data = data;
 }
 
 template <class Type>

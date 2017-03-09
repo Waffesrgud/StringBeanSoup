@@ -50,4 +50,33 @@ void Stack<Type> :: push(Type addedThing)
     this->size++;
     end = addToStack;
 }
+
+template <class Type>
+void Stack<Type> :: pop()
+{
+    assert(this->getSize() > 0);
+    Type removed = this->getEnd()->getNodeData();
+    
+    BiDirectioanlNode<Type> * update = this->getEnd();
+    update = update->getPreviousPointer();
+    
+    if(update != nullptr)
+    {
+    update->setNextPointer(nullptr);
+    }
+    delete this->getEnd();
+    
+    this->setEnd(update);
+    
+    this->setSize(this->getSize() - 1);
+    
+    return removed;
+}
+
+template <class Type>
+Type Stack<Type> :: remove(int index)
+{
+    assert(index == this->getSize() - 1 && this->getSize() > 0);
+    return pop();
+}
 #endif /* Stack_hpp */

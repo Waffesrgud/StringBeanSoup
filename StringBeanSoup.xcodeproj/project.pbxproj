@@ -28,6 +28,8 @@
 /* Begin PBXFileReference section */
 		73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = ../DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		73431C901E6730040092BFBA /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		734D5C1B1E71A23C00FE0537 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		734D5C1C1E71ABE100FE0537 /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleList.h; sourceTree = "<group>"; };
 		734FD7181E5C8E540079F92F /* C++.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "C++.pdf"; path = "../../C++.pdf"; sourceTree = "<group>"; };
 		734FD7191E5CA5530079F92F /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		735772AC1E6F022000C6DD48 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
@@ -89,6 +91,8 @@
 				736A2E021E648D0300AB1FB4 /* BiDirectionalNode.hpp */,
 				73431C901E6730040092BFBA /* Stack.hpp */,
 				735772AC1E6F022000C6DD48 /* Queue.h */,
+				734D5C1B1E71A23C00FE0537 /* Timer.hpp */,
+				734D5C1C1E71ABE100FE0537 /* DoubleList.h */,
 			);
 			path = StringBeanSoup;
 			sourceTree = "<group>";
