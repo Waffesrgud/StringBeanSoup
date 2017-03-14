@@ -1,8 +1,8 @@
 //
-//  Queue.h
+//  Queue.hpp
 //  StringBeanSoup
 //
-//  Created by Corbett, Grayson on 3/7/17.
+//  Created by Corbett, Grayson on 3/14/17.
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 

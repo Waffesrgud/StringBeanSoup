@@ -36,6 +36,7 @@ public:
     bool contains(Type data);
     int getSize() const;
     Node<Type> * getFront();
+    Node<Type> * getEnd();
 };
 
 template <class Type>
@@ -57,13 +58,13 @@ int List<Type> :: getSize() const
 }
 
 template <class Type>
-Node<Type> * List<Type> :: getFront() const
+Node<Type> * List<Type> :: getFront()
 {
     return this->front;
 }
 
 template <class Type>
-Node<Type> * List<Type> :: getFront() const
+Node<Type> * List<Type> :: getEnd()
 {
     return this->end;
 }
@@ -103,13 +104,14 @@ void List<Type> :: addEnd(Type data)
     size++;
 }
 
-void List<Type> :: AddAtIndex(int index, Type value)
+template <class Type>
+void List<Type> :: addAtIndex(int index, Type value)
 {
     assert(index >= 0 && index <= size);
     if(index == 0)
     {
         addFront(value);
-    }`
+    }
     if(index == size)
     {
         addEnd(value);
@@ -120,13 +122,14 @@ void List<Type> :: AddAtIndex(int index, Type value)
         Node<Type> * current = front;
         for(int position = 0; position < index; position++)
         {
-            previous = current;
+            this->previous = current;
             current = current->getNodePointer();
         }
         
         size++;
     }
-    
+}
+
     template <class Type>
     Type List<Type> :: setAtIndex(int index, Type data)
     {
@@ -178,7 +181,7 @@ template <class Type>
         current = toBeRemoved -> getNodePointer();
         previous -> setNodePointer(current);
         }
-        removed = toBeRemoved -> getNodeData()
+        removed = toBeRemoved->getNodeData();
 
         delete toBeRemoved;
         

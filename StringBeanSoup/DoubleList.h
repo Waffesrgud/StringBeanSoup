@@ -11,17 +11,18 @@
 
 #include "BiDirectionalNode.hpp"
 
-class DoubleList : DoublyLinkedList
+template <class Type>
+class DoubleList : public DoublyLinkedList<Type>
 {
 private:
 public:
-    Type * getFromIndexFast();
+    Type * getFromIndexFast(int index);
     void add(Type value);
-    Type * remove();
+    Type remove(int index);
 };
 
 template <class Type>
-Type * DoublyLinkedList<Type> :: getFromIndexFast(int index)
+Type * DoubleList<Type> :: getFromIndexFast(int index)
 {
     assert(index >=0 && index < this->getSize());
     Type valueAtIndex;
@@ -42,8 +43,8 @@ Type * DoublyLinkedList<Type> :: getFromIndexFast(int index)
             reference = reference->getPreviousPointer();
         }
     }
-    value = reference->getNodeData();
-    return ValueAtIndex;
+    valueAtIndex = reference->getNodeData();
+    return valueAtIndex;
 }
 
 template <class Type>
@@ -58,7 +59,7 @@ void DoubleList<Type> :: add(Type value)
         
     {
         this->getEnd()->setNextPointer(addedNode);
-        addedNde->setPreviousPointer(this->getEnd());
+        addedNode->setPreviousPointer(this->getEnd());
     }
     this->setEnd(addedNode);
     this->setSize(this->getSize() + 1);

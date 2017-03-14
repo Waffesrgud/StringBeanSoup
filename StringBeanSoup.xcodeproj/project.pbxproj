@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7379B5CE1E76DC98003650F5 /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7379B5CD1E76DC98003650F5 /* Meme.cpp */; };
 		73B9B95C1E48D5F200F1351C /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B9B95A1E48D5F200F1351C /* IntNode.cpp */; };
 		73EE50FE1E4B72FF00B8F829 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73EE50FC1E4B72FF00B8F829 /* IntNodeArray.cpp */; };
 		73EE51001E4B7D4700B8F829 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73EE50FF1E4B7D4700B8F829 /* Runner.cpp */; };
@@ -26,14 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		731494211E7829B700E0027C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = ../Queue.hpp; sourceTree = "<group>"; };
 		73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = ../DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		73431C901E6730040092BFBA /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		734D5C1B1E71A23C00FE0537 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		734D5C1C1E71ABE100FE0537 /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleList.h; sourceTree = "<group>"; };
 		734FD7181E5C8E540079F92F /* C++.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "C++.pdf"; path = "../../C++.pdf"; sourceTree = "<group>"; };
 		734FD7191E5CA5530079F92F /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
-		735772AC1E6F022000C6DD48 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		736A2E021E648D0300AB1FB4 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BiDirectionalNode.hpp; sourceTree = "<group>"; };
+		7379B5CA1E76DAB9003650F5 /* Meme.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Meme.hpp; sourceTree = "<group>"; };
+		7379B5CD1E76DC98003650F5 /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = ../Meme.cpp; sourceTree = "<group>"; };
 		73B9B95A1E48D5F200F1351C /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNode.cpp; sourceTree = "<group>"; };
 		73B9B95B1E48D5F200F1351C /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNode.hpp; sourceTree = "<group>"; };
 		73BDB79E1E54B86200558494 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = ../Array.hpp; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		73F248E91E438AEC00E61BB9 /* StringBeanSoup */ = {
 			isa = PBXGroup;
 			children = (
+				731494211E7829B700E0027C /* Queue.hpp */,
 				73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */,
 				73BDB79E1E54B86200558494 /* Array.hpp */,
 				73C805BA1E52094600D4C75C /* Node.hpp */,
@@ -90,9 +94,10 @@
 				734FD7191E5CA5530079F92F /* List.hpp */,
 				736A2E021E648D0300AB1FB4 /* BiDirectionalNode.hpp */,
 				73431C901E6730040092BFBA /* Stack.hpp */,
-				735772AC1E6F022000C6DD48 /* Queue.h */,
 				734D5C1B1E71A23C00FE0537 /* Timer.hpp */,
 				734D5C1C1E71ABE100FE0537 /* DoubleList.h */,
+				7379B5CA1E76DAB9003650F5 /* Meme.hpp */,
+				7379B5CD1E76DC98003650F5 /* Meme.cpp */,
 			);
 			path = StringBeanSoup;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				73EE51031E4B7E0B00B8F829 /* StructureController.cpp in Sources */,
 				73B9B95C1E48D5F200F1351C /* IntNode.cpp in Sources */,
 				73EE50FE1E4B72FF00B8F829 /* IntNodeArray.cpp in Sources */,
+				7379B5CE1E76DC98003650F5 /* Meme.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
