@@ -41,6 +41,7 @@
 		73B9B95B1E48D5F200F1351C /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNode.hpp; sourceTree = "<group>"; };
 		73BDB79E1E54B86200558494 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = ../Array.hpp; sourceTree = "<group>"; };
 		73C805BA1E52094600D4C75C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = ../Node.hpp; sourceTree = "<group>"; };
+		73E9A8241E797EBB005BB4CA /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		73EE50FC1E4B72FF00B8F829 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNodeArray.cpp; sourceTree = "<group>"; };
 		73EE50FD1E4B72FF00B8F829 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNodeArray.hpp; sourceTree = "<group>"; };
 		73EE50FF1E4B7D4700B8F829 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				734D5C1C1E71ABE100FE0537 /* DoubleList.h */,
 				7379B5CA1E76DAB9003650F5 /* Meme.hpp */,
 				7379B5CD1E76DC98003650F5 /* Meme.cpp */,
+				73E9A8241E797EBB005BB4CA /* CircularList.hpp */,
 			);
 			path = StringBeanSoup;
 			sourceTree = "<group>";

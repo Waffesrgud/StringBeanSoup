@@ -10,6 +10,7 @@
 #define Queue_hpp
 
 #include "BiDirectionalNode.hpp"
+#include "DoublyLinkedList.hpp"
 
 template <class Type>
 class Queue : public DoublyLinkedList<Type>
