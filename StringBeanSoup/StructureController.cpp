@@ -26,19 +26,6 @@ StructureController :: StructureController()
 }
 
 
-void StructureController :: testPain()
-{
-    Meme datBoi("It's Dat Boi! Waddup!");
-    Queue<Meme> memeQueue;
-    memeQueue.add(datBoi);
-    Meme secondMeme;
-    secondMeme.setDankness(8435);
-    memeQueue.enqueue(secondMeme);
-    
-    Meme temp = memeQueue.dequeue();
-    cout << "Dankness should be 8435, is: " << temp.getDankness() >> endl;
-}
-
 void StructureController :: testIntArray()
 {
     cout << "Creating an IntNodeArray!" << endl;

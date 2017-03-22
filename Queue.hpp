@@ -33,6 +33,7 @@ Queue<Type> :: Queue() : DoublyLinkedList<Type>()
     
 }
 
+template <class Type>
 Queue<Type> :: ~Queue()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
@@ -44,26 +45,26 @@ Queue<Type> :: ~Queue()
     }
 }
 
+template <class Type>
 void Queue<Type> :: add(Type value)
 {
     enqueue(value);
 }
 
 template <class Type>
-void Queue :: enqueue(Type data)
+void Queue<Type> :: enqueue(Type data)
 {
-    assert(index == 0 && this->getSize() > 0);
-    BiDirectionalNode * newFront = new BiDirectionalNode<Type>(data);
-    if(size == 0)
+    BiDirectionalNode<Type> * newFront = new BiDirectionalNode<Type>(data);
+    if(this->getSize() == 0)
     {
         this->setFront(newFront);
     }
     else
     {
-        this->getEnd()->setNextPointer(added);
-        added->setPreviousPointer(this->getEnd());
+        this->getEnd()->setNextPointer(newFront);
+        newFront->setPreviousPointer(this->getEnd());
     }
-    this->setEnd(added);
+    this->setEnd(newFront);
     this->setSize(this->getSize() + 1);
 }
 
@@ -71,9 +72,9 @@ template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->getSize() > 0);
-    Type value =  this->getFront->getNodeData();
+    Type value =  this->getFront()->getNodeData();
     BiDirectionalNode<Type> * removeMe = this-> getFront();
-    if(this->size == 1)
+    if(this->getSize() == 1)
     {
         this->setEnd(nullptr);
         this->setFront(nullptr);
@@ -82,7 +83,7 @@ Type Queue<Type> :: dequeue()
     {
         this->setFront(removeMe->getNextPointer());
     }
-    this->setFront()->setPreviousPointer(nullptr);
+    this->getFront()->setPreviousPointer(nullptr);
     
     delete removeMe;
     this->setSize(this->getSize() - 1);
@@ -94,6 +95,18 @@ template <class Type>
 Type Queue<Type> :: remove(int index)
 {
     assert(index == 0 && this->getSize() > 0);
+    BiDirectionalNode<Type> * temp = this->getIndex(index);
+    Type data = temp->getNodeData();
+    if(this->getSize() == 1)
+    {
+        delete this->getFront();
+    } else {
+        this->getIndex(index + 1)->setPreviousPointer(this->getIndex(index - 1));
+        this->getIndex(index - 1)->setNextPointer(this->getIndex(index + 1));
+        delete &temp;
+    }
+
+    return data;
 }
 
 template <class Type>

@@ -10,7 +10,7 @@
 #define BiDirectionalNode_h
 
 template <class Type>
-class BiDirectionalNode : public Node<Type>
+class BiDirectionalNode
 {
 private:
     Type data;
@@ -31,58 +31,62 @@ public:
 };
 
 template <class Type>
-BiDirectionalNode :: BiDirectionalNode() : Node<Type>()
+BiDirectionalNode<Type> :: BiDirectionalNode()
 {
+    this->data = nullptr;
     this->previousPointer = nullptr;
-    this->previous = nullptr;
+    this->nextPointer = nullptr;
 }
 
 template <class Type>
-BiDirectionalNode :: BiDirectionalNode(Type data) : Node<Type>()
+BiDirectionalNode<Type> :: BiDirectionalNode(Type data)
 {
+    this->data = data;
     this->previousPointer = nullptr;
-    this->previous = nullptr;
+    this->nextPointer = nullptr;
 }
 
 template <class Type>
-BiDirectionalNode :: BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next)
+BiDirectionalNode<Type> :: BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next)
 {
-    this->previous = previous;
+    this->data = data;
+    this->previousPointer = previous;
+    this->nextPointer = next;
 }
 
 template <class Type>
-Type BiDirectionalNode :: getData()
+Type BiDirectionalNode<Type> :: getNodeData()
 {
     return data;
 }
 
 template <class Type>
-BiDirectionalNode<Type> * BiDirectionalNode :: getNextPointer()
+BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getNextPointer()
 {
     return this->nextPointer;
 }
 
 template <class Type>
-BiDirectionalNode<Type> * BiDirectionalNode :: getPreviousPointer()
+BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getPreviousPointer()
 {
-    return this->previous;
+    return this->previousPointer;
 }
 
 template <class Type>
-void BiDirectionalNode :: setNodeData(Type data)
+void BiDirectionalNode<Type> :: setNodeData(Type data)
 {
     this->data = data;
 }
 
 template <class Type>
-void BiDirectionalNode :: setNextPointer(BiDirectionalNode<Type> * next)
+void BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * next)
 {
-    this-> nextPointer = next;
+    this->nextPointer = next;
 }
 
 template <class Type>
-void BiDirectionalNode :: setPreviousPointer(BiDirectionalNode<Type> * previous)
+void BiDirectionalNode<Type> :: setPreviousPointer(BiDirectionalNode<Type> * previous)
 {
-    this->previous = previous;
+    this->previousPointer = previous;
 }
 #endif /* BiDirectionalNode_h */

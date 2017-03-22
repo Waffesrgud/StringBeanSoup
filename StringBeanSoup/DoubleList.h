@@ -9,6 +9,7 @@
 #ifndef DoubleList_hpp
 #define DoubleList_hpp
 
+#include "DoublyLinkedList.hpp"
 #include "BiDirectionalNode.hpp"
 
 template <class Type>
