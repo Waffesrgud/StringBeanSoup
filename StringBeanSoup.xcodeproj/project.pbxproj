@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		731494211E7829B700E0027C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = ../Queue.hpp; sourceTree = "<group>"; };
+		731713E81EB77A4B0068EF82 /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashTable.hpp; sourceTree = "<group>"; };
 		7331945B1EAA4801001F4B36 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = ../DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		73431C901E6730040092BFBA /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				731494211E7829B700E0027C /* Queue.hpp */,
 				73431C8E1E67285A0092BFBA /* DoublyLinkedList.hpp */,
 				73BDB79E1E54B86200558494 /* Array.hpp */,
+				731713E81EB77A4B0068EF82 /* HashTable.hpp */,
 				73C805BA1E52094600D4C75C /* Node.hpp */,
 				73B9B95A1E48D5F200F1351C /* IntNode.cpp */,
 				73B9B95B1E48D5F200F1351C /* IntNode.hpp */,
