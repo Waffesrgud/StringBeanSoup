@@ -37,6 +37,7 @@
 		734FD7181E5C8E540079F92F /* C++.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "C++.pdf"; path = "../../C++.pdf"; sourceTree = "<group>"; };
 		734FD7191E5CA5530079F92F /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		736A2E021E648D0300AB1FB4 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BiDirectionalNode.hpp; sourceTree = "<group>"; };
+		7375FF551EC20C4400B1909B /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		7379B5CA1E76DAB9003650F5 /* Meme.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Meme.hpp; sourceTree = "<group>"; };
 		739C23FD1E9D201E009943AA /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
 		739C23FE1E9D24E7009943AA /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 				7331945B1EAA4801001F4B36 /* AVLTree.hpp */,
 				739C23FE1E9D24E7009943AA /* Tree.hpp */,
 				739C23FF1E9D29FA009943AA /* BinarySearchTree.hpp */,
+				7375FF551EC20C4400B1909B /* Graph.h */,
 			);
 			path = StringBeanSoup;
 			sourceTree = "<group>";
